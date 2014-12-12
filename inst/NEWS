@@ -218,3 +218,21 @@ BUG FIXES
     o Fixed problem with RMySQL dependency when using annotation from UCSC.
     Solved with the usage of RSQLite, however, the process is a bit longer.
     
+CHANGES IN VERSION 1.4.1 (2014-12-12)
+--------------------------------------
+
+NEW FEATURES
+
+    o Support for pig genome (Sus scrofa, susScr3 in UCSC).
+    o Updated package citation as the paper describing the methods was
+    published in NAR.
+    
+BUG FIXES
+
+    o Introduced a (hopefully robust) fix for constant changes in Ensembl
+    schema for human GRC37 (hg19). It increases annotation retrieval time
+    a little bit though.
+    o Fixed problem when input counts are a data.frame and count.type is exon,
+    introduced during package upgrades. Thanks to Ben Elsworth, Garvan
+    Institute of Medical Research, Austria.
+
