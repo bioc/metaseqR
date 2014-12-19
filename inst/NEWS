@@ -218,21 +218,31 @@ BUG FIXES
     o Fixed problem with RMySQL dependency when using annotation from UCSC.
     Solved with the usage of RSQLite, however, the process is a bit longer.
     
-CHANGES IN VERSION 1.4.1 (2014-12-12)
+CHANGES IN VERSION 1.4.1 (2014-10-31)
 --------------------------------------
 
 NEW FEATURES
 
-    o Support for pig genome (Sus scrofa, susScr3 in UCSC).
-    o Updated package citation as the paper describing the methods was
-    published in NAR.
+    o Support for pig genome (Sus scrofa, susScr3 in UCSC)
+    
+BUG FIXES
+
+    o None 
+    
+CHANGES IN VERSION 1.4.11 (2014-12-19)
+--------------------------------------
+
+NEW FEATURES
+
+    o Minor code improvements
     
 BUG FIXES
 
     o Introduced a (hopefully robust) fix for constant changes in Ensembl
     schema for human GRC37 (hg19). It increases annotation retrieval time
-    a little bit though.
-    o Fixed problem when input counts are a data.frame and count.type is exon,
+    though
+    o Fixed problem when input counts are a data.frame and count.type in exon,
     introduced during package upgrades. Thanks to Ben Elsworth, Garvan
     Institute of Medical Research, Austria.
-
+    o Fixed problem related to a bug in the current version of edgeR GLM and 
+    the usage of ... in glmFit.
