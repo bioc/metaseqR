@@ -218,7 +218,7 @@ BUG FIXES
     o Fixed problem with RMySQL dependency when using annotation from UCSC.
     Solved with the usage of RSQLite, however, the process is a bit longer.
     
-CHANGES IN VERSION 1.4.1 (2014-10-31)
+CHANGES IN VERSION 1.5.1 (2014-10-31)
 --------------------------------------
 
 NEW FEATURES
@@ -229,7 +229,7 @@ BUG FIXES
 
     o None 
     
-CHANGES IN VERSION 1.4.11 (2014-12-19)
+CHANGES IN VERSION 1.4.12 (2014-12-22)
 --------------------------------------
 
 NEW FEATURES
@@ -244,5 +244,8 @@ BUG FIXES
     o Fixed problem when input counts are a data.frame and count.type in exon,
     introduced during package upgrades. Thanks to Ben Elsworth, Garvan
     Institute of Medical Research, Austria.
+    o Replaced "==" with all.equal while checking if the sum of weights is one
+    when meta.p="weight". Of course this is the correct way to compare. Thanks 
+    to Ben Elsworth, Garvan Institute of Medical Research, Austria.
     o Fixed problem related to a bug in the current version of edgeR GLM and 
     the usage of ... in glmFit.
