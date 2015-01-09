@@ -1401,6 +1401,7 @@ validate.list.args <- function(what,method=NULL,arg.list) {
 #' mm9.exons <- get.annotation("mm9","exon","ucsc")
 #'}
 get.annotation <- function(org,type,refdb="ensembl",multic=FALSE) {
+    org <- tolower(org)
     switch(refdb,
         ensembl = { return(get.ensembl.annotation(org,type)) },
         ucsc = { return(get.ucsc.annotation(org,type,refdb,multic)) },

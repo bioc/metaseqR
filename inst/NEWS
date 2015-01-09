@@ -249,3 +249,16 @@ BUG FIXES
     to Ben Elsworth, Garvan Institute of Medical Research, Austria.
     o Fixed problem related to a bug in the current version of edgeR GLM and 
     the usage of ... in glmFit.
+
+CHANGES IN VERSION 1.4.13 (2015-01-09)
+--------------------------------------
+
+NEW FEATURES
+
+    o None
+    
+BUG FIXES
+
+    o Fixed small bug regarding annotation retrieval when directly using the
+    get.annotation function for certain genomes (e.g. pig). Thanks to Rathi
+    Ryan from Synthetic Genomics, Inc.
