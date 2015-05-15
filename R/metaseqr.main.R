@@ -1017,7 +1017,8 @@ metaseqr <- function(
         annotation <- "download"
     }
 
-    if (meta.p %in% c("weight","dperm.weight") && abs(1-sum(weight))>1e-5)
+    if (meta.p %in% c("weight","pandora","dperm.weight") && 
+        abs(1-sum(weight))>1e-5)
         stopwrap("The weights given for p-value combination should sum to 1!")
 
     check.text.args("file.type",file.type,c("auto","sam","bam","bed"),
@@ -2193,6 +2194,9 @@ metaseqr <- function(
                         cut.ind <- which(sum.p.list[[cnt]]<=pcut)
                     },
                     weight = {
+                        cut.ind <- which(sum.p.list[[cnt]]<=pcut)
+                    },
+                    pandora = {
                         cut.ind <- which(sum.p.list[[cnt]]<=pcut)
                     },
                     simes = {
