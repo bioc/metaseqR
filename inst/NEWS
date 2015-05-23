@@ -295,7 +295,7 @@ BUG FIXES
     o Fixed a problem caused by a bug in baySeq 2.0.50 code which caused an
     analysis based in baySeq to crash.
 
-CHANGES IN VERSION 1.6.12 (2015-05-15)
+CHANGES IN VERSION 1.8.0 (2015-05-23)
 --------------------------------------
 
 NEW FEATURES
