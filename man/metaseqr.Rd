@@ -320,9 +320,9 @@
     \code{"dperm.min"}, \code{"dperm.max"}, \code{"dperm.weight"}, 
     \code{"fisher"}, \code{"fperm"}, \code{"whitlock"} or 
     \code{"none"}. For the \code{"fisher"} and \code{"fperm"} 
-    methods, see the documentation of the R package MADAM. For 
-    the \code{"whitlock"} method, see the documentation of the 
-    survcomp Bioconductor package. With the \code{"maxp"} 
+    methods, see the documentation of the archived CRAN package 
+    MADAM. For the \code{"whitlock"} method, see the documentation 
+    of the survcomp Bioconductor package. With the \code{"maxp"} 
     option, the final p-value is the maximum p-value out of 
     those returned by each statistical test. This is 
     equivalent to an "intersection" of the results derived 
@@ -500,13 +500,13 @@
     more of \code{"natural"}, \code{"log2"}, \code{"log10"},
     \code{"vst"} (Variance Stabilizing Transormation, see the
     documentation of DESeq package) and \code{"rpgm"} which
-	is ratio of mapped reads per gene model (either the gene
-	length or the sum of exon lengths, depending on 
-	\code{count.type} argument). Note that this is not RPKM
-	as reads are already normalized for library size using 
-	one of the supported normalization methods. Also, 
-	\code{"rpgm"} might be misleading when \code{normalization} 
-	is other than \code{"deseq"}.}
+    is ratio of mapped reads per gene model (either the gene
+    length or the sum of exon lengths, depending on 
+    \code{count.type} argument). Note that this is not RPKM
+    as reads are already normalized for library size using 
+    one of the supported normalization methods. Also, 
+    \code{"rpgm"} might be misleading when \code{normalization} 
+    is other than \code{"deseq"}.}
 
     \item{export.values}{It can be one or more of
     \code{"raw"} to export raw values (counts etc.) and
